@@ -1,15 +1,23 @@
 name: Actions Pipeline
+
 on:
- push:
- branches: [ main ]
- pull_request:
- branches: [ main ]
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
 jobs:
- build:
-   runs-on: ubuntu-latest
-   steps:
-   - name: Checkout code
-   uses: actions/checkout@v2
-   - name: Build code
-   run: <BUILD>
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Build code
+        run: |
+          echo "Building the project..."
+          # Replace this with actual build commands
 
