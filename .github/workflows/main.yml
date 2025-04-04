@@ -3,10 +3,10 @@ name: Actions Pipeline
 on:
   push:
     branches:
-      - main
+      - melnychuk
   pull_request:
     branches:
-      - main
+      - melnychuk
 
 jobs:
   build:
